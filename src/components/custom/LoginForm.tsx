@@ -35,7 +35,12 @@ const LoginForm = ({ control, onSubmit }: Props) => {
         />
       </Flex>
 
-      <CustomButton label="Sign In" type="submit" isLoading={isLoading} />
+      <CustomButton
+        label="Sign In"
+        type="submit"
+        isLoading={isLoading}
+        onClick={onSubmit}
+      />
     </FormFlex>
   );
 };
